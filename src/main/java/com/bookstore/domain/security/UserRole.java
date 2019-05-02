@@ -16,7 +16,7 @@ import com.bookstore.domain.User;
 public class UserRole {
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long userRoleId;
 	
 	@ManyToOne(fetch = FetchType.EAGER)
